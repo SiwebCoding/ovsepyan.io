@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+body{
+    
+  margin: 0;
+  padding: 0;
+  background-color: black;
+} 
+
+.game_1{
+    color: rgb(255, 250, 250);
+    
+}
+
+.game_2{
+    color: rgb(255, 255, 255);
+    
+}
+
+.game_3{
+    color: rgb(255, 255, 255);
+  
+}
+
+.game_4{
+    color: rgb(255, 255, 255);
+   
+}
+
+.game_5{
+    color: rgb(255, 255, 255);
+
+}
+
+span{
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 20px;
+}
+
+
+.nav{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    background-color: rgb(16, 8, 8);
+    align-items: center;
+    
+}
+
+.nav .logo img {
+    height: 80px;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 30px 20px;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.nav ul li a:hover{
+    color:black;
+    font-size:20px ;
+    background-color: darkseagreen;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+}
+
+.logo>img{
+
+    width: 200px;
+    height: 80px;
+   
+
+}
+
+
+ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+li a{
+    text-decoration: wavy;
+    font-size: 25px;
+    padding: 16px 50px;
+}
+
+li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+.search{
+    padding-right: 10px;
+    display:flex;
+   
+}
+
+
+input[type=text]{
+    border: none;
+    width: 120px;
+    height: 50px;
+    border-radius: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    font-family: "Trade Winds", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 0, 0);
+    background-color: rgb(4, 0, 246);
+    transition: width 0.4s ease-in-out;
+    background: url(https://static.wikia.nocookie.net/minecraft_ru_gamepedia/images/f/fe/%D0%9B%D1%83%D0%BF%D0%B0_%28Railcraft%29.png/revision/latest?cb=20121010192421);
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-position-x: right;
+    border:2px solid white;
+    margin-right: 5px;
+}   
+
+
+.first_button:hover{
+    background-color: chartreuse;
+}
+
+input[type=text]:focus{
+    width: 220px;
+}
+
+::placeholder{
+    color:  rgb(255, 255, 255);
+}
+
+
+.first_button{
+    width: 130px;
+    height: 55px;
+    border-radius: 30px;
+   /* font-size: 20px;*/
+    /*font-family: "Trade Winds", system-ui;*/
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid white;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.content>img{
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+.for_1{
+    font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.container{
+    color: rgb(245, 245, 245);
+    max-width: 100%;
+    height: 900px;
+    
+}
+
+
+.raw{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.child{
+    width: 350px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: 10px;
+    padding: 10px;
+    
+}
+
+
+.child>img{
+    width:100%;
+    height: auto;
+}
+
+h2{
+    font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+}
+
+
+p{
+    font-family: "Press Start 2P", system-ui;
+}
+
+a{
+    text-decoration: none;
+    color:whitesmoke;
+
+}
+
+a:hover{
+    color: #52a535;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding-left: 0;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+        text-align: center;
+       
+      
+    }
+
+    .nav ul li a {
+        font-size: 20px;
+        padding:10px 0;
+        font-family: "Press Start 2P", system-ui; 
+        
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav.active ul {
+        display: flex;
+    }
+
+    .nav .search {
+        display: none;
+    }
+
+    .for_1{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+}
